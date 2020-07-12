@@ -1,0 +1,17 @@
+<table align=center border="3" bgcolor=#ffe6cc style="width:50%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>GPA</th>
+    </tr>
+    {% for student_data in stdlist %}
+
+    <tr>
+        <td>{{ student_data[0] }}</td>
+        <td>{{ student_data[1] }}</td>
+        <td>{{ student_data[2] }}</td>
+        <td>{{ student_data[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
